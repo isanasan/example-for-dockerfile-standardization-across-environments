@@ -5,4 +5,4 @@ ARG ENVIRONMENT
 ENV ENVIRONMENT ${ENVIRONMENT:-dev}
 
 # PHP設定ファイル
-COPY --link ${ENVIRONMENT}/php.ini /etc/
+COPY --link ${ENVIRONMENT}/php.ini /usr/local/etc/php/
